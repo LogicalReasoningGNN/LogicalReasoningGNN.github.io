@@ -10,130 +10,6 @@ html {
   font-size: 16px;
 }
 
-
-.spon{
-display:block;
-position:absolute;
-float:left;
-color:#999;
-bottom:115px;
-left:10px;
-}
-
-.spon2{
-display:block;
-position:absolute;
-right:100px;
-color:#999;
-bottom:85px;
-}
-
-
-
-.logo3{
-display:block;
-position:absolute;
-float:top right;
-color:#000;
-right:0%;
-top:150px;
-  width: 170px;
-height:50px;
-
-  background: url(../../logo-inria.png) no-repeat center center/cover;
-}
-
-.logo5{
-display:block;
-position:absolute;
-float:top right;
-color:#000;
-right:26%;
-top:140px;
-  width: 70px;
-height:100px;
-
-  background: url(../../ens_logo_tl.png) no-repeat center center/cover;
-}
-
-
-
-.logo7{
-display:block;
-position:absolute;
-float:top right;
-color:#000;
-left:0%;
-top:150px;
-  width: 170px;
-height:60px;
-
-  background: url(../../SUSig_Stack.png) no-repeat center center/cover;
-}
-
-.logo6{
-display:block;
-position:absolute;
-float:top right;
-color:#000;
-left:46%;
-top:150px;
-  width: 100px;
-height:100px;
-
-  background: url(../../nipslogo.svg) no-repeat center center/cover;
-}
-
-.logo4{
-display:block;
-position:absolute;
-float:top right;
-color:#000;
-right:13%;
-top:159px;
-  width: 150px;
-height:40px;
-
-  background: url(../../KULeuven.png) no-repeat center center/cover;
-}
-
-
-.logo1{
-display:block;
-position:absolute;
-float:top right;
-color:#000;
-left:0px;
-bottom:0px;
-  width: 200px;
-height:120px;
-
-  background: url(../../cfm_logo.png) no-repeat center center/cover;
-}
-
-.logo2{
-display:block;
-position:absolute;
-bottom:20px;
-right:0px;
-  width: 200px;
-height:60px;
-  background: url(../../Owkin_Logo.png) no-repeat center center/cover;
-}
-
-
-@media screen 
-  and (max-width:480px) 
-
-{
-    // insert here your custom styles
-    .logo3 .logo4 .logo5 .logo6 .logo7  {
-       display:none;
-    }
-}
-
-
-
 body {
   color: #4e4e4e;
   font-family: 'Roboto', sans-serif;
@@ -355,10 +231,10 @@ ul li {
 }
 
 .bg-image-2 {
- /* background: url(../images/backgrounds/bg-2.jpg) no-repeat center bottom/cover;*/
+  background: url(../images/backgrounds/bg-2.jpg) no-repeat center bottom/cover;
 }
 .bg-image-2::before {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 @media (min-width: 768px) {
@@ -382,29 +258,26 @@ ul li {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #fff;
+  background-color: #000;
   -webkit-transition: all 0.2s linear 0s;
           transition: all 0.2s linear 0s;
-  color: #fff;
 }
 .navbar-custom .navbar-nav li {
   margin: 0;
 }
 .navbar-custom .navbar-nav > li > a {
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 400;
   border-bottom: 1px solid transparent;
 }
 .navbar-custom .navbar-nav > li > a:focus, .navbar-custom .navbar-nav > li > a:hover {
-  color: #000;
   background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 .navbar-custom .navbar-nav > .active > a {
-  color: #000;
-  border-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar-toggle {
@@ -413,12 +286,11 @@ ul li {
   margin-top: 2px;
 }
 .navbar-toggle .icon-bar {
-
-  background-color: #000;
+  background-color: #fff;
 }
 
 .navbar-solid {
-  background-color: #fff !important;
+  background-color: #000 !important;
   padding: 0 !important;
   -webkit-transition: all 0.2s linear 0s;
           transition: all 0.2s linear 0s;
@@ -430,7 +302,7 @@ ul li {
   margin-left: 10px;
 }
 .site-branding .logo {
-  color: #000;
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
   margin-right: 5px;
@@ -450,10 +322,8 @@ ul li {
   min-height: 100vh;
   position: relative;
   text-align: center;
-  /*background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;*/
+  background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;
   display: table;
-  background-color: rgba(0, 0, 0, 0);
-
 }
 .site-header::before {
   content: "";
@@ -462,10 +332,10 @@ ul li {
   right: 0;
   bottom: 0;
   left: 0;
-/*  background-color: rgba(0, 0, 0, 0.5);*/
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .site-header .intro {
-  color: #888;
+  color: #fff;
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -475,9 +345,6 @@ ul li {
   display: table-cell;
   vertical-align: middle;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0);
-
-
 }
 .site-header .intro h2 {
   margin-top: 0px;
@@ -558,8 +425,8 @@ ul li {
  * 6.5 Section: Contribution
  */
 .contribution {
-  text-align: left;
-  color: #555;
+  text-align: center;
+  color: #fff;
 }
 
 /* 
@@ -593,7 +460,7 @@ ul li {
   display: block;
   opacity: 0.3;
   height: 150px;
-  width: 250px;
+  width: 150px;
   margin: 25px auto;
   -webkit-transition: 0.5s all linear;
           transition: 0.5s all linear;
@@ -602,10 +469,10 @@ ul li {
   opacity: 1;
 }
 .partner .partner-box-1 {
-  background: url(../../cfm_logo.png) no-repeat center center/contain;
+  background: url(../images/partner/partner-1.png) no-repeat center center/contain;
 }
 .partner .partner-box-2 {
-  background: url(../../Owkin_Logo.png) no-repeat center center/contain;
+  background: url(../images/partner/partner-2.png) no-repeat center center/contain;
 }
 .partner .partner-box-3 {
   background: url(../images/partner/partner-3.png) no-repeat center center/contain;
