@@ -42,7 +42,7 @@ p {
 
 ul li {
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .custom-list-icon, .list-arrow-right {
